@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    
+    --cor-primaria: #221FF9;   
+    --cor-secundaria: #E06704;
+    --cor-terciaria: #70E05E;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+
+body{
+    
+    background-color: var(--cor-secundaria);
+    box-sizing: border-box ;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30;
+    line-height: normal; /*espaçamento entre linhas */
+
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+}
+
+.menu-cabecalho{
+    display:flex; /*alinha os itens em linha */
+    gap: 5rem; /*espaço entre os itens */    
+    align-items: center; /*alinha os itens ao centro */
+}
+
+.menu-cabecalho-link{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border:  0.125rem solid #70E05E;
+    border-bottom-width: 0,65rem;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: var(--cor-primaria);
+    text-decoration: none; /*remove o sublinhado do link */
+
+}
+
+.apresentacao-imagem
+{
+    width: 90%; /*largura da imagem */
+      /* border-radius: 50%; borda arredondada */
+     margin: 0 5%; /*margem externa */
+}
+
+a {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+
+
+p{
+    margin: 0.5rem 0;
+    padding: 0.5rem; /*O Padding é responsável por definir a distância entre um conteúdo e suas bordas
+*/    
+    
+}
+
+.apresentacao{
+    display: flex; /*alinha os itens em linha */
+   background-color: var(--cor-primaria); 
+    color:white;
+    padding: 5% 15%; /*espaçamento interno */
+    margin: 2rem 2rem ; /* LIMITA a largura máxima do container */
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;  /*espaço entre os itens */
+}
+
+.apresentacao_conteudo{
+    width: 50%; /*largura do container*/
+    gap: 40px;
+    display: flex; /*alinha os itens em linha */
+    flex-direction: column; /*alinha os itens em coluna */  
+   
+    
+}
+
+.apresentacao_titulo{
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+    
+}
+
+.titulo-destaque
+{
+    color: #70E05E;
+}
+
+.apresentacao_texto{
+    font-size: 1.38rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.botao-link{
+    display: flex; /*alinha os itens em linha */           
+    flex-direction: column; /*alinha os itens em coluna */
+    justify-content: space-between; /*espaço entre os itens */
+    align-items: center; /*centraliza os itens */
+    gap: 2rem; /*espaço entre os itens */
+} 
+
+.apresentacao_titulo-subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400; /*espessura da fonte */
+    font-size: 1.5rem;
+}
+
+
+
+.botao-insta{
+    display: flex; /*alinha os itens em linha */
+    align-items: center; /*alinha os itens ao centro */
+    justify-content: center; /*alinha os itens ao centro */
+    gap: 1rem; /*espaço entre a img e o texto */
+    background-color: var(--cor-terciaria);  
+    width: 24rem; /*largura do botão */
+    text-align: center; /*alinha o texto ao centro */
+    padding: 1.35rem 0; /*espaçamento interno */
+    border-radius: 0.5rem; /*borda arredondada */
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: none; /*remove o sublinhado do link */
+    border: 0.25rem solid #70E05E; /*borda do botão */
+}
+
+
+.botao-insta:hover{
+    background-color: white;
+    color: #221FF9;
+    border: 0.25rem solid #221FF9;
+}
+
+.roda-pe{
+    color: white;
+    background-color: #221FF9;
+    padding: 0.70rem; /*espaçamento interno */
+    text-align: center; /*alinha o texto ao centro */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    
+    
+}
+
+
+@media (max-width: 1200px)
+{
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .menu-cabecalho{
+        justify-content: center;
+    }
+
+
+    .apresentacao{
+        flex-direction: column-reverse; /*alinha os itens em coluna */
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo{
+        width: auto;
+    }
+}

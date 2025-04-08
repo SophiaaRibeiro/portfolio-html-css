@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estilosimples.css">
+    <title>Curso html e css alura</title>
+    <link rel="stylesheet" href="styles/estilosimples.css">
 </head>
 
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="menu-cabecalho">
+            <a class="menu-cabecalho-link" href="index.html">Home</a>
+            <a class="menu-cabecalho-link" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao_conteudo">
             <h1 class="apresentacao_titulo">Eleve seu negócio digital a outro nível 
@@ -20,16 +25,29 @@
                     Gosto de criar layouts bonitos e responsivos para tornar a experiência do usuário mais agradável.
                 </p>
 
-                    <div class="botao-link">
-                    
-                    <a class= "botao-insta" href="https://instagram.com/sophia.mribeiro">Instagram</a>
 
-                    <a class= "botao-insta" href="https://github.com/sophiaaribeiro">GitHub</a>
+                    <div class="botao-link">
+                    <h2 class="apresentacao_titulo-subtitulo">Acesse minhas redes:</h2>
+                    
+                    <a class= "botao-insta" href="https://github.com/sophiaaribeiro" target="_blank">
+                        <img src="/imgs-css/github.png" alt="GitHub"> GitHub </a>
+                        
+                    <a class="botao-insta" href="http://www.linkedin.com/in/sophia-r-mendon%C3%A7a-95105a252" target="_blank">
+                        <img src="/imgs-css/linkedin.png" alt="Linkedin"> Linkedin</a>                
+                       
+                    <a class= "botao-insta"  href="https://instagram.com/sophia.mribeiro" target="_blank">
+                        <img src="imgs-css/instagram.png" alt="Instagram">
+                        
+                        Instagram</a>
                     </div>
                   
         </section>
-                <img src="/img/html e css.jpeg" alt="html e css">
+                <img class="apresentacao-imagem"   src="/img/html e css.jpeg" alt="html e css">
     </main>
-    <footer></footer>
+    <footer class="roda-pe">
+        <p>Desenvolvido por Sophia Ribeiro Mendonça</p>
+    
+    
+    </footer>
 </body>
 </html>
