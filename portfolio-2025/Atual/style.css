@@ -199,8 +199,6 @@ h1{
     color: white
 }
 
-
-
 .projeto-titulo{
     font-size: 18px;
     margin-left: 15px;
@@ -233,41 +231,53 @@ h1{
     text-decoration: none;
 }
 
-.bloco-conhecimento{
-    background-color: var(--marrom-clarin);
-  padding: 15px;
-  border-radius: 10px; 
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-    /* display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: var(--marrom-clarin);
-    padding: 13px;
-    margin-bottom: 10px;
-    font-size: 16px; */
-   
-}
-
 
 .container-conhecimentos {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
   gap: 20px;
-  padding: 20px; */
+  justify-items: center;
+  padding: 40px 20px;
+}
+
+@media (max-width: 900px) {
+  .container-conhecimentos {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas quando for menor que 900px */
+  }
+}
+
+@media (max-width: 600px) {
+  .container-conhecimentos {
+    grid-template-columns: 1fr; /* 1 coluna em celulares */
+  }
+}
+
+.caixinha-conhecimento {
+    background-color: var(--bege-acinzentado);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Largura fixa para alinhar os cards */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    justify-content: space-between; 
+}
+
+.caixinha-conhecimento h2,
+.caixinha-conhecimento p {
+  margin: 0;
+  padding: 0;
+}
+
+.caixinha-conhecimento h2 {
+  text-align: center;
 }
 
 .container-certificados h2{
     font-size: 15px;
     text-align: center;
 }
+
 
 .certificados{
     display: flex;
@@ -322,8 +332,6 @@ h1{
   display: inline-block;
   margin-top: 15px;
 }
-
-
 
 
 .formulario-contato button:hover {
