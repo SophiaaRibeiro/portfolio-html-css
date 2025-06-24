@@ -8,6 +8,13 @@
     --marrom-clarin: #8C7765;
     --bege: #A69E94;
     --cinza:#BFBFBD;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza-claro: #EDEDE9;
+    --bege-acinzentado: #D6CCC2;
+    --bege-claro: #F5EBE0;
+    --areia-suave: #E3D5CA;
+    --marrom-claro-rosado: #D5BDAF;
     --fonte-principal: 'Raleway', sans-serif;
      }
 
@@ -95,8 +102,7 @@ h1{
 
 .menu-cabecalho{
     background-color: var(--marrom-escuro);
-    padding: 8px;
-    color: var(--bege);
+    padding: 8px;    
     font-family: Raleway, sans-serif;
     font-size: 3px;
     text-align: center;
@@ -108,8 +114,9 @@ h1{
 
 .menu-cabecalho a{
     text-decoration: none;
-    color: var(--cinza);
+    color: var(--bege);
     font-size: 20px;
+    font-weight: bold;
 }
 
 .footer{
@@ -145,10 +152,221 @@ h1{
 }
 
 
+.secao-projetos{
+   text-align: center;
+    padding: 40px;
+   
+}
+
 .container-projetos{
-    max-width: 600px;  
-    font-size: 18px;    
-    justify-content: center;
-    text-align: justify;
+    display: flex;
+    flex-wrap: wrap; /* Faz quebrar para a próxima linha se necessário */
+    justify-content: center; /* Centraliza os itens na linha */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 20px;
+    padding: 0 15%;
+}
+
+.container-projetos a{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--bege-acinzentado);
+    font-weight: bold;
+}
+
+
+.projeto{
+    border-radius: 10px;
+    background-color: var(--marrom-clarin);
+    width: 300px;  /* Largura fixa para alinhar os cards */
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    flex-direction: column;     /* Coloca os elementos em coluna */
+    justify-content: space-between;  /* Empurra o link pro final */
+  
+
+    
+}
+
+.projeto:hover{
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+}
+
+.projeto-link:hover{
+    
+    color: white
+}
+
+
+
+.projeto-titulo{
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.projeto-explicacao{
+    font-size: 16px;
+    color: var(--marrom-escuro);
+    margin-top: 10px;
+}
+
+.projeto-tecnologia{
+    font-size: 14px;
+    color: var(--marrom-escuro);
+}
+.projeto-link{
+    text-decoration: none;
+    color: var(--marrom-escuro);
+    font-size: 14px;
+    margin-top: auto; /* Empurra esse link para o final do container */
+}
+
+.botao-curriculo{
+    background-color: var(--marrom-escuro);
+    color: var(--cinza);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.bloco-conhecimento{
+    background-color: var(--marrom-clarin);
+  padding: 15px;
+  border-radius: 10px; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+    /* display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--marrom-clarin);
+    padding: 13px;
+    margin-bottom: 10px;
+    font-size: 16px; */
+   
+}
+
+
+.container-conhecimentos {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px; */
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container-certificados h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+.certificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10px;
+    background-color: var(--marrom-clarin);
+    padding: 20px;
+    text-decoration: none;
+    color: var(--marrom-escuro);
+}
+
+.certificados:hover{
+    color: var(--cinza);
+    text-decoration: underline;
+}
+   
+.formulario-contato{
+  display: flex;
+  flex-direction: column;
+   border: 3px solid #3e2c20;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+    
+}
+
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 12px;
+  border: 1px solid var(--marrom-escuro);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #fff;
+  color: var(--marrom-escuro);
+  resize: none;
+}
+
+.formulario-contato button {
+  padding: 12px;
+  background-color: var(--marrom-escuro);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+
+
+
+.formulario-contato button:hover {
+  background-color: var(--marrom-clarin);
+}
+
+
+.caixinha-respostas{
+    background-color: var(--bege-claro);
+    padding: 8px;
+    
+    border-radius: 2px;
+     font-size: 15px;
+
+}
+
+.caixinha-perguntas {    
+    border-radius: 2px;
+     font-size: 17px;
+}
+
+
+  .faq h3{
+    color: var(--preto);    
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+} 
+
+.tam-h2{
+    font-size: 15px;
+    color: var(--marrom-escuro);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--bege-acinzentado);
+    border-radius: 2px;
     margin: 20px auto;
+    
 }

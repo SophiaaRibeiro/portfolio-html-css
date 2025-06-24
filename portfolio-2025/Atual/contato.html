@@ -24,18 +24,38 @@
             <a href="index.html"> Home | </a>            
             <a href="projetos.html">  Projetos | </a>
             <a href="curriculo.html">  Currículo | </a>
-            <a href="habilidades.html">  Conhecimentos | </a>
+            <a href="conhecimentos.html">  Conhecimentos | </a>
             <a href="certificados.html">  Certificados | </a>
             <a href="Sobremim.html"> Sobre Mim | </a>
-            <a href="contato.html">  Contato | </a>
-            <a href="temaescuro.html">  Tema Escuro </a>
+            <a href="contato.html">  Contato </a>
+         
         </nav>
         </header>
         <section class="container-texto">          
-            <h2> Contato</h2>
-           
-              
-        </section>
+            <h2>Entre em contato comigo para saber mais.</h2>
+     
+                <form action="https://formsubmit.co/sophia.mribeiro16@gmail.com" method="POST"  class="formulario-contato">
+                    <label for="nome">Seu nome</label><br>
+                    <input type="text" name="nome" id="nome" size="30" placeholder="Ex: João Paulo" required><br><br>
 
+                    <label for="email">Seu e-mail</label><br>
+                    <input type="text" name="email" id="email" size="30" placeholder="Ex: joao.paulo@email.com" required><br><br>
+
+                    <label for="mensagem">Escreva aqui seu assunto de interesse:</label><br>
+                    <textarea  name="mensagem" placeholder="Sua mensagem" rows="10" cols="40" placeholder="sua mensagem aqui" required> </textarea><br>
+
+                    <!-- Evita spam -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Redireciona após envio -->
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+                    <button type="submit">Enviar</button>
+                    <button class="limpar" type="reset">Limpar</button>
+
+                </form>
+
+           <p> Muito obrigada pela sua visita. Volte sempre!</p>              
+        </section>
     </body>
-    </html>
+</html>
