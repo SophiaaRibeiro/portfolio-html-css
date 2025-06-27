@@ -4,63 +4,78 @@
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width-width=device-width, initial-scale=1.0/">
         <title> Portfólio Sophia Ribeiro Mendonça | Dev </title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="style.css">  
         <link href="https://fonts.googleapis.com/cssh2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/cssh2?family=Fira+Sans:ital,wght@0,100;0,h200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,h200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 
     </head>
     <body>
-        <header class="cabecalho">
+          <header class="cabecalho">
             <div class="container-logo">
             <h1 >SophiaaRibeiro.GitHub </h1>
             <img class="foto-perfil" src="img/ft-circulo.png" alt="Sophia Ribeiro Mendonça"  width="100" height="100">
              </div>
-                <button class="menu-toggle" id="btnMenu">☰</button>
+               
             <nav class="menu-cabecalho" id="menuCabecalho">
-            <a href="index.html">Home</a>            
-            <a href="projetos.html">Projetos</a>
-            <a href="curriculo.html">Currículo</a>
-            <a href="conhecimentos.html">Conhecimentos</a>
-            <a href="certificados.html">Certificados</a>
-            <a href="Sobremim.html"> Sobre Mim</a>
-            <a href="contato.html">Contato</a>     
+                <a href="index.html">Home</a>            
+                <a href="projetos.html">Projetos</a>
+                <a href="curriculo.html">Currículo</a>
+                <a href="conhecimentos.html">Conhecimentos</a>
+                <a href="certificados.html">Certificados</a>
+                <a href="Sobremim.html"> Sobre Mim</a>
+                <a href="contato.html">Contato</a>     
         </nav>
-        </header>
+         </header> 
+              <section class="conhecimentos-section">                     
+                      <div class="filtros">
+                        <button onclick="filtrar('todos')">Todos</button>
+                        <button onclick="filtrar('frontend')">Front-end</button>
+                        <button onclick="filtrar('backend')">Back-end</button>
+                        <button onclick="filtrar('bd')">Banco de Dados</button>
+                      </div>
+                     
+                      <div id="conhecimentos-container" class="container-conhecimentos">
+                        <div class="caixinha-conhecimento frontend">
+                          <h2>HTML</h2>
+                          <p>HTML semântico, formulários, estrutura organizada.</p>
+                          <div class="barra"><div class="progresso" data-valor="75"></div></div>
+                        </div>
 
-        <section class="container-texto">     
-          <section class="container-conhecimentos">
-            <div class="caixinha-conhecimento">
-              <h2>HTML</h2>
-              <p>Utilizo HTML para estruturar páginas web de forma semântica, acessível e organizada. É a base de todos os meus projetos front-end.</p>
-            </div>
+                 
+                        <div class="caixinha-conhecimento frontend">
+                          <h2>CSS</h2>
+                          <p>Layouts com Flexbox, Grid, media queries, animações.</p>
+                          <div class="barra"><div class="progresso" data-valor="65"></div></div>
+                        </div>
 
-            <div class="caixinha-conhecimento">
-              <h2>CSS</h2>
-              <p>Uso CSS para estilizar páginas, criar layouts responsivos e aplicar animações sutis. Já utilizei Flexbox, Grid e media queries.</p>
-            </div>
+                    
+                        <div class="caixinha-conhecimento frontend">
+                          <h2>JavaScript</h2>
+                          <p>Manipulação do DOM, lógica, eventos, animações.</p>
+                          <div class="barra"><div class="progresso" data-valor="30"></div></div>
+                        </div>
 
-            <div class="caixinha-conhecimento">
-              <h2>C#</h2>
-              <p>Utilizo C# no back-end de sistemas web e em automações com CefSharp, principalmente no contexto do estágio e projetos pessoais.</p>
-            </div>
+                      
+                        <div class="caixinha-conhecimento backend">
+                          <h2>C#</h2>
+                          <p>Uso em automações e sistemas web, integração com SQL.</p>
+                          <div class="barra"><div class="progresso" data-valor="80"></div></div>
+                        </div>
 
-            <div class="caixinha-conhecimento">
-              <h2>JavaScript</h2>
-              <p>Aplico JavaScript para deixar os sites interativos, validando formulários, manipulando DOM e explorando lógica de programação.</p>
-            </div>
+                      
+                        <div class="caixinha-conhecimento bd">
+                          <h2>SQL</h2>
+                          <p>Consultas com JOINs, procedures, manipulação real de dados.</p>
+                          <div class="barra"><div class="progresso" data-valor="50"></div></div>
+                        </div>
+                      </div>
+              </section>
 
-            <div class="caixinha-conhecimento">
-              <h2>SQL</h2>
-              <p>Trabalho com SQL para consultar e manipular dados em bancos relacionais, usando SELECTs, JOINs e procedures em contextos reais.</p>
-            </div>
-          </section> 
-        </section>
-        <button id="btnTopo">↑</button>
-             <script src="script.js"></script>
 
+       
+          <button id="btnTopo">↑</button>
+        <script src="script.js"></script>
     </body>
 </html>

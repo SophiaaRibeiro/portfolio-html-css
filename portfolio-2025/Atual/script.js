@@ -20,9 +20,33 @@ btnTopo.addEventListener("click", () => {
 });
 }); // Função para exibir o botão "Voltar ao Topo" quando a página for rolada
 
-const btnMenu = document.getElementById("btnMenu");
-const menuCabecalho = document.getElementById("menuCabecalho");
+  // Animação das barras de progresso
+  const barras = document.querySelectorAll(".progresso");
+  barras.forEach((barra) => {
+    const valor = barra.getAttribute("data-valor");
+    barra.style.width = valor + "%";
+  });
 
-btnMenu.addEventListener("click", () => { 
-    menuCabecalho.classList.toggle("ativo")
+function filtrar(categoria) {
+  const cards = document.querySelectorAll('.caixinha-conhecimento');
+  cards.forEach(card => {
+    if (categoria === 'todos' || card.classList.contains(categoria)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+// Função para filtrar os cards de conhecimentos
+
+document.addEventListener('DOMContentLoaded', () => {
+  const faq = document.querySelectorAll('.btn-pergunta-sobremim');
+
+  faq.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      item.classList.toggle('ativo');
+    });
+  });
 });
+// Função para criar a interação do acordeão
