@@ -225,6 +225,8 @@ h1{
 .projeto-titulo{
     font-size: 18px;
     margin-left: 15px;
+    color: var(--marrom-escuro);
+    font-weight: bold;
 }
 
 .projeto-explicacao{
@@ -512,4 +514,11 @@ nav a:hover{
   color: var(--bege-claro);
   border-bottom: 2px solid var(--branco);
   padding-bottom: 5px;
+}
+
+
+.filtros button.active {
+  background-color: var(--marrom); 
+  color: var(--branco);           
+  border: 2px solid var(--marrom-escuro);
 }

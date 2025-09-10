@@ -12,13 +12,15 @@ window.addEventListener("scroll", () => {
     }
 });
 
+
+// Função para exibir o botão "Voltar ao Topo" quando a página for rolada
 btnTopo.addEventListener("click", () => {
     window.scrollTo({ 
         top: 0,
         behavior: "smooth"
     });
 });
-}); // Função para exibir o botão "Voltar ao Topo" quando a página for rolada
+}); 
 
   // Animação das barras de progresso
   const barras = document.querySelectorAll(".progresso");
@@ -27,7 +29,10 @@ btnTopo.addEventListener("click", () => {
     barra.style.width = valor + "%";
   });
 
-function filtrar(categoria) {
+
+// Função para filtrar os cards de conhecimentos
+
+function filtrar(categoria, btn) {
   const cards = document.querySelectorAll('.caixinha-conhecimento');
   cards.forEach(card => {
     if (categoria === 'todos' || card.classList.contains(categoria)) {
@@ -36,9 +41,13 @@ function filtrar(categoria) {
       card.style.display = 'none';
     }
   });
+  // controla qual botão está ativo
+  document.querySelectorAll('.filtros button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
 }
-// Função para filtrar os cards de conhecimentos
 
+
+// Função para criar a interação do acordeão
 document.addEventListener('DOMContentLoaded', () => {
   const faq = document.querySelectorAll('.btn-pergunta-sobremim');
 
@@ -49,4 +58,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-// Função para criar a interação do acordeão
